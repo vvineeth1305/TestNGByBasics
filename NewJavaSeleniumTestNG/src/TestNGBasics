@@ -103,4 +103,7 @@ similar thread-count is the attribute how many instances the execution should ha
 
 --> Verbose in TestNG is an attribute in XML file at suite Level 
 
-It accept the value from 1 - 10 and as we increase the value amounts of details in teh console will be improved.
+It accept the value from 1 - 10 and as we increase the value amounts of details in the console will be improved.
+
+
+// Next: DataProvider, Listeners,Parallel Execution

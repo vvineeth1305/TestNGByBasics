@@ -11,6 +11,7 @@ public class AssertionsTest {
 	@Test
 	public void SoftAssertionNoAssertAll() {
 
+		//SoftAssert softAssert = new SoftAssert();
 		System.out.println("check point for Soft Assert Pass:");
 		softAssert.assertEquals(true, true, "true & true");
 
@@ -21,22 +22,24 @@ public class AssertionsTest {
 		softAssert.assertEquals(true, true, "true & true");
 		
 		System.out.println("No softAssert collection- so No Fail");
+		//softAssert.assertAll();
 	}
 	@Test
 	public void SoftAssertionAssertAll() {
 
+		//SoftAssert softAssert = new SoftAssert();
 		System.out.println("check point for Soft Assert Pass:");
 		softAssert.assertEquals(true, true, "true & true");
 
 		System.out.println("check point for Soft Assert Fail:");
-		softAssert.assertEquals(true, false, "true & False");
+		//softAssert.assertEquals(true, false, "true & False");
 		
 		System.out.println("check point for Soft Assert Pass:");
 		softAssert.assertEquals(true, true, "true & true");
 		
 		
 		System.out.println("check point for Soft Assert Fail:");
-		softAssert.assertEquals(true, false, "true & False");
+		//softAssert.assertEquals(true, false, "true & False");
 		
 		softAssert.assertAll();
 	}

@@ -7,7 +7,7 @@
 <!-- Cannot find class in classpath: com.testNG.priority1SampleTest -->
 <!-- is thrown when no such class is available -->
 
-<suite name="New Java Selenium TestNG Tutorials" verbose="1">
+<suite name="New Java Selenium TestNG Tutorials" verbose="4">
 <listeners>
 	<listener class-name ="com.TestNGListeners.ITransformer"/>
 </listeners>
@@ -21,10 +21,10 @@
 		<parameter name="UserName" value="vvineeth1305" />
 		<classes>
 		
-		<class name = "com.TestNGBasicFeatures.RetryRunTest"/>
+	<!-- <class name = "com.TestNGBasicFeatures.RetryRunTest"/> -->	
 
 <!-- 			<class name="com.TestNGParameters.ParameterTest" /> -->
-			<!-- <class name = "com.TestNGBasicFeatures.PrioritySampleTest"/> -->
+			 <class name = "com.TestNGBasicFeatures.PrioritySampleTest"/>
 			<!-- <class name = "com.TestNGBasicFeatures.DependsSampleTest"/> -->
 			<!-- <class name = "com.TestNGBasicFeatures.GoogleTest"/> -->
 			<!-- <class name = "com.TestNGBasicFeatures.GoogleTitleTest"/> -->

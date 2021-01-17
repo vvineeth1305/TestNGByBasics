@@ -17,12 +17,15 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Base {
 
 	public static WebDriver driver;
-	public static String basePath = "C:\\Users\\Vineeth V\\eclipse-workspace\\NewJavaSeleniumTestNG";
-
+	public static String basePath = System.getProperty("user.dir");
+	public static String  path = System.getProperty("user.dir");
+	
+	
+	
 	public static void Initialization() {
-
+		System.out.println(path);
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Vineeth V\\eclipse-workspace\\NewJavaSeleniumTestNG\\Libs1\\chromedriver.exe");
+				basePath+"\\Libs1\\chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();

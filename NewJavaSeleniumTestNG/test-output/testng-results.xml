@@ -1,30 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="11" passed="11">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9468" started-at="2021-01-17T16:30:50 IST" finished-at="2021-01-17T16:30:59 IST">
+  <suite name="Default suite" duration-ms="224" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:19 IST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9468" started-at="2021-01-17T16:30:50 IST" finished-at="2021-01-17T16:30:59 IST">
-      <class name="com.TestNGBasicFeatures.ScreenshotTest">
-        <test-method status="PASS" signature="SetUP()[pri:0, instance:com.TestNGBasicFeatures.ScreenshotTest@35a50a4c]" name="SetUP" is-config="true" duration-ms="8128" started-at="2021-01-17T16:30:50 IST" finished-at="2021-01-17T16:30:58 IST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SetUP -->
-        <test-method status="FAIL" signature="Test1()[pri:0, instance:com.TestNGBasicFeatures.ScreenshotTest@35a50a4c]" name="Test1" duration-ms="14" started-at="2021-01-17T16:30:58 IST" finished-at="2021-01-17T16:30:58 IST">
-          <exception class="java.lang.AssertionError">
+    <test name="Default test" duration-ms="224" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:19 IST">
+      <class name="com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest">
+        <test-method status="PASS" signature="ArthematicExceptionSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="ArthematicExceptionSample" duration-ms="18" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <exception class="java.lang.ArithmeticException">
             <message>
-              <![CDATA[expected [false] but found [true]]]>
+              <![CDATA[/ by zero]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [false] but found [true]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:819)
-at org.testng.Assert.assertEquals(Assert.java:829)
-at com.TestNGBasicFeatures.ScreenshotTest.Test1(ScreenshotTest.java:23)
+              <![CDATA[java.lang.ArithmeticException: / by zero
+at com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest.ArthematicExceptionSample(OtherMainFeaturesSamplesTest.java:27)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -55,15 +45,51 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.ArithmeticException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="TearDown()[pri:0, instance:com.TestNGBasicFeatures.ScreenshotTest@35a50a4c]" name="TearDown" is-config="true" duration-ms="937" started-at="2021-01-17T16:30:58 IST" finished-at="2021-01-17T16:30:59 IST">
+        </test-method> <!-- ArthematicExceptionSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="4" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TearDown -->
-      </class> <!-- com.TestNGBasicFeatures.ScreenshotTest -->
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="7" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="5" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="2" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="8" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="7" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="6" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="2" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="7" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+        <test-method status="PASS" signature="InvocationCountSample()[pri:0, instance:com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest@376b4233]" name="InvocationCountSample" duration-ms="2" started-at="2021-01-17T23:27:18 IST" finished-at="2021-01-17T23:27:18 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InvocationCountSample -->
+      </class> <!-- com.TestNGBasicFeatures.OtherMainFeaturesSamplesTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

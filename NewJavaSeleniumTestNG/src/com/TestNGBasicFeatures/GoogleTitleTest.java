@@ -14,20 +14,14 @@ import org.testng.annotations.Test;
 
 
 
-public class GoogleTitleTest {
+public class GoogleTitleTest extends Base{
 
 	WebDriver driver;
 
 	@BeforeMethod
 	public void setUp() {
 
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\Vineeth V\\eclipse-workspace\\NewJavaSeleniumTestNG\\Libs1\\chromedriver.exe");
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
-		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+		Initialization();
 		driver.get("https://www.google.com");
 	}
 

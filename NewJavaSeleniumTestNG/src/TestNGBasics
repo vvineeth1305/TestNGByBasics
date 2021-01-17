@@ -1,0 +1,106 @@
+TestNG in Breif: TestNG also know as Testing Next Generation is a Java unit testing framework mainly used by developer to develop unit level test cases.
+This is also know as TDD(Test Driven Development) framework.
+
+Some of the Key Features of TestNG:
+
+1. TestNG Provides HTML reports for the execution which not available in Selenium Webdriver.
+2. It Provides Wide range of Annotations helps control the flow of methods in the test scripts.
+3. It Supports Priority/Sequencing of Test cases 
+4. It Supports Grouping of Test cases 
+5. It has Dependancy feature
+6. Data Provider is one of the Key feature of TestNG.
+
+** Annotations and its Sequence
+
+Precondtion annonations
+1. @BeforeSuite
+2. @BeforeTest
+3. @BeforeClass
+4. @BeforeMethod
+
+Test Conditions annotations
+
+5. @Test (which is nothing but actual method) 
+
+Post Condition annotations
+
+6. @AfterMethod
+7. @AfterClass
+8. @AfterTest
+9. @AfterSuite
+
+
+
+for better understanding the sequence lets assume me have 3 test methods then the sequence with
+
+
+
+1. @BeforeSuite
+2. @BeforeTest
+3. @BeforeClass
+4. @BeforeMethod
+5. @Test (Test case 1 based of method name alphabeticorder) 
+6. @AfterMethod
+7. @BeforeMethod
+8. @Test (Test case 2 based of method name alphabeticorder) 
+9. @AfterMethod
+10. @BeforeMethod
+11. @Test (Test case 3 based of method name alphabeticorder) 
+12. @AfterMethod
+13. @AfterClass
+14. @AfterTest
+15. @AfterSuite
+
+
+-->Sequence of XML file 
+Suite->listener->test->parameter->groups->package-> class->method
+
+
+-->dependsON Attribute can be used on Test Annotations using dependsOnMethods in @TestAnnotation and also on groups using dependsOnGroups
+
+dependsOnMethods can be applied as below 
+1. dependsOnMethods- Single @Test(dependsOnMethod = "MethodName") 
+2. dependsOnMethods- Multiple @Test(dependsOnMethod = {"Method1", "Method2"})
+3. dependsOnMethods-Inherited  above logic on Inherited class 
+
+Same can be applied on Groups with the attribute dependsOnGroups
+
+--> Priority in TestNG 
+1. Priority in TestNG is applicable only for @Test annotation
+2. It allows both positive and negative values.
+3. We can't assign multiple priorities to same test but we can assign same priority value to multiple test which will be order based on method name
+4. Its not mandatory to add priorities in sequence.
+5. TestNG will add 0 as Priority to Skipped Methods
+6. Priority can't be assigned from XML file.
+7. TestNG run method Priority by priority instead of class by class
+   // Eg: C1M1, C2M1, C3M1, C1M2, C2M2 ........
+   
+--> Soft Assert and Hard Assert 
+
+Assertion is step used as verification or validation of the particular step.
+Hard Assert: 
+1. If Hard Assert is failed the Test method is terminated and the steps below that particular step are skipped
+2. we can directly use hard assert without creating any object
+3. No need of extra code to collect exception its will displayed as soon as assertion is failed
+
+Soft Assert:
+1. If soft Assert is failed the Test method will not be terminated.
+2. we need to create object to use Soft SoftAssert softAssert = new SoftAssert();
+3. we need to end our test with softAssert.assertAll(); to collect all the assert and to report in the reporter.
+
+-->
+1. Grouping in TestNG let multiple Test methods to Group with Single Group Name.
+2. Using XML file help Play with this grouping with the Keywords Exclude and Include which allows to run specific groups and ignore others
+ TestNG allows allows Grouping of Groups know as Meta Groups (Reiterate while working with XML)
+ 
+--> how do we do parallel execution in TestNG
+
+We will use parallel attribute along with thread-count to achieve parallel execution
+
+IN XML file at test level we will add parallel attribute which will allow package class method or instances as values
+similar thread-count is the attribute how many instances the execution should happen.
+
+
+--> Verbose in TestNG is an attribute in XML file at suite Level 
+
+It accept the value from 1 - 10 and as we increase the value amounts of details in teh console will be improved.

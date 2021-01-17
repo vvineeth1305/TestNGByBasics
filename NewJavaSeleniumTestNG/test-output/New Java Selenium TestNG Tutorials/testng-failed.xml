@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [New Java Selenium TestNG Tutorials]">
+  <listeners>
+    <listener class-name="com.TestNGRetryLogic.ITransformer"/>
+  </listeners>
+  <test thread-count="5" name="TestNG Features(failed)">
+    <parameter name="UserName" value="vvineeth1305"/>
+    <parameter name="URL" value="https://login.Yahoo.com"/>
+    <classes>
+      <class name="com.TestNGBasicFeatures.RetryRunTest">
+        <methods>
+          <include name="sampleTest1"/>
+          <include name="sampleTest2"/>
+        </methods>
+      </class> <!-- com.TestNGBasicFeatures.RetryRunTest -->
+    </classes>
+  </test> <!-- TestNG Features(failed) -->
+</suite> <!-- Failed suite [New Java Selenium TestNG Tutorials] -->

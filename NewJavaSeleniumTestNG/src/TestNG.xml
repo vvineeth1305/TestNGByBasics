@@ -1,0 +1,37 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<!-- java.lang.NoClassDefFoundError: com/testNG/prioritySampleTest (wrong 
+	name: com/testNG/PrioritySampleTest) -->
+<!-- is thrown when incorrect class name is called in XML file -->
+
+<!-- Cannot find class in classpath: com.testNG.priority1SampleTest -->
+<!-- is thrown when no such class is available -->
+
+<suite name="New Java Selenium TestNG Tutorials" verbose="1">
+<listeners>
+	<listener class-name ="com.TestNGListeners.ITransformer"/>
+</listeners>
+	<test name="TestNG Features">
+	
+<!-- 	A test contains parameters and classes. Additionally, you can define additional groups ("groups of groups") -->
+
+<!-- Content Model : (method-selectors?, parameter*, groups?, packages?, classes?) -->
+
+		<parameter name="URL" value="https://login.Yahoo.com" />
+		<parameter name="UserName" value="vvineeth1305" />
+		<classes>
+		
+		<class name = "com.TestNGBasicFeatures.RetryRunTest"/>
+
+<!-- 			<class name="com.TestNGParameters.ParameterTest" /> -->
+			<!-- <class name = "com.TestNGBasicFeatures.PrioritySampleTest"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.DependsSampleTest"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.GoogleTest"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.GoogleTitleTest"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.GroupingSampleTest"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.InheritedDependanceSampleTest"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.TestNGBasics"/> -->
+			<!-- <class name = "com.TestNGBasicFeatures.priority1SampleTest"/> -->
+		</classes>
+	</test>
+</suite>
